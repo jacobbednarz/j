@@ -1,4 +1,19 @@
 #!/usr/bin/env bash
 
-echo "installing homebrew"
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+indent() {
+  sed "s/^/    /"
+}
+
+info() {
+  echo "==> ${1}"
+}
+
+if [[ $(which brew) == "" ]]; then
+  info "installing homebrew"
+  bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+else
+  info "skipping homebrew as \`brew\` is already available"
+fi 
+
+info "running homebrew-bundle"
+brew bundle --global | indent
