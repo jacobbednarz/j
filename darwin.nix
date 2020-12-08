@@ -3,5 +3,9 @@
 {
   environment.darwinConfig = "$HOME/.config/nixpkgs/darwin.nix";
 
-  environment.systemPackages = [];
+  users.users.jacob = {
+    home = "/Users/jacob";
+    description = "Jacob Bednarz";
+    shell = pkgs.fish;
+  };
 }
