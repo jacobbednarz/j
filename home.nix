@@ -8,7 +8,7 @@
   home.homeDirectory = "/Users/jacob";
   home.stateVersion = "21.03";
 
-  # home.nix is basically the entrypoint for all other topic files that live 
+  # home.nix is basically the entrypoint for all other topic files that live
   # under the home-manager directory.
   imports = [
     ./config/home-manager/xdg.nix

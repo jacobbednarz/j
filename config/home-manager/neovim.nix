@@ -14,14 +14,14 @@
       vim-fish # fish
       vim-toml # toml
       rust-vim # rust
-      
-      # editor 
+
+      # editor
       vim-endwise # add end, } after opening block
       ale         # linting
       nerdtree    # file tree
 
       # misc
-      vim-fugitive # Gblame      
+      vim-fugitive # Gblame
     ];
   };
 }

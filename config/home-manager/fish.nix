@@ -1,9 +1,11 @@
 { config, pkgs, ... }:
 
 {
+  home.file.".fish".source = ../fish;
+
   programs.fish = {
     enable = true;
-    
+
     shellInit = ''
       # turn off the damn greeting
       set fish_greeting
@@ -61,7 +63,7 @@
         set -l prompt_status (__fish_print_pipestatus " [" "]" "|" (set_color $fish_color_status) (set_color --bold $fish_color_status) $last_pipestatus)
 
         echo -n -s (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal $prompt_status $suffix " "
-      ''; 
+      '';
 
       reload = ''
         if test (count $argv) -eq 0
