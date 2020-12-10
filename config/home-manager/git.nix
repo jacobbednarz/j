@@ -33,12 +33,16 @@
     };
 
     extraConfig = {
-      core.autocrlf       = "input";
-      core.trustctime     = false;
-      core.whitespace     = "fix,-indent-with-non-tab,trailing-space,cr-at-eol";
-      core.editor         = "vim";
-      core.commentChar    = "|";
-      core.pager          = "~/.nix-profile/share/git/contrib/diff-highlight/diff-highlight | less";
+      core = {
+        eol         = "lf";
+        autocrlf    = "input";
+        trustctime  = false;
+        whitespace  = "fix,-indent-with-non-tab,trailing-space,cr-at-eol";
+        editor      = "vim";
+        commentChar = "|";
+        pager       = "~/.nix-profile/share/git/contrib/diff-highlight/diff-highlight | less";
+        commitGraph = true;
+      };
 
       status.renames = "copies";
 
