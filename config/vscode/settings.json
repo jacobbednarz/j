@@ -1,5 +1,16 @@
 {
     "editor.fontFamily": "Jetbrains Mono",
     "editor.fontSize": 13,
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "files.eol": "\r\n",
+    "explorer.confirmDelete": false,
+    "editor.rulers": [
+        80
+    ],
+    "explorer.confirmDragAndDrop": false,
+    "editor.scrollBeyondLastLine": false,
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "workbench.colorTheme": "Gruvbox Dark Hard"
 }
