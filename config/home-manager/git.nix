@@ -114,6 +114,8 @@
       credential.helper = "osxkeychain";
 
       protocol.version = 2;
+
+      advice.detachedHead = false;
     };
   };
 }
