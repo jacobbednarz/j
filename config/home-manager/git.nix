@@ -69,6 +69,10 @@
 
       color.ui = "auto";
 
+      commit = {
+        verbose = true;
+      };
+
       interactive.diffFilter = "~/.nix-profile/share/git/contrib/diff-highlight/diff-highlight";
 
       log.showSignature = false;
