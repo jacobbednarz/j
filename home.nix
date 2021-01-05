@@ -6,7 +6,7 @@
 
   home.username = "jacob";
   home.homeDirectory = "/Users/jacob";
-  home.stateVersion = "21.03";
+  home.stateVersion = "20.03";
 
   # home.nix is basically the entrypoint for all other topic files that live
   # under the home-manager directory.
