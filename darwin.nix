@@ -22,6 +22,9 @@
   # always show scrollbars
   system.defaults.NSGlobalDomain.AppleShowScrollBars = "Always";
 
+  # don't use scroll like a weirdo
+  system.defaults.NSGlobalDomain."com.apple.swipescrolldirection" = false;
+
   # metric system ftw
   system.defaults.NSGlobalDomain.AppleMeasurementUnits = "Centimeters";
   system.defaults.NSGlobalDomain.AppleMetricUnits = 1;
