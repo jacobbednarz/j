@@ -4,6 +4,12 @@
     userName = "Jacob Bednarz";
     userEmail = "jacob.bednarz@gmail.com";
 
+    attributes = [
+      "*.rb diff=ruby"
+      "*.rake diff=ruby"
+      "*.gemspec diff=ruby"
+    ];
+
     aliases = {
       br                     = "branch";
       branches               = "branch -a --color -v";
