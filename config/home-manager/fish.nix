@@ -23,6 +23,10 @@
       if test -d /usr/local/opt/libressl/bin
         set -g fish_user_paths "/usr/local/opt/libressl/bin" $fish_user_paths
       end
+
+      set -gx GPG_TTY (tty)
+      set -gx SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
+      gpgconf --launch gpg-agent
     '';
 
     plugins = [

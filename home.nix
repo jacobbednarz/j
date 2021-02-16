@@ -15,6 +15,7 @@
     ./config/home-manager/env.nix
     ./config/home-manager/fish.nix
     ./config/home-manager/git.nix
+    ./config/home-manager/gnupg.nix
     ./config/home-manager/homebrew.nix
     ./config/home-manager/rectangle.nix
     ./config/home-manager/vscode.nix
