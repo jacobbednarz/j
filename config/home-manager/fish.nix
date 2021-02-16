@@ -14,10 +14,14 @@
       [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 
       # hub
-      #eval (hub alias -s)
+      if command -v hub &> /dev/null
+        eval (hub alias -s)
+      end
 
       # rg
-      set -gx FZF_DEFAULT_COMMAND  'rg --files --no-ignore-vcs --hidden'
+      if command -v fzf &> /dev/null && command -v rg &> /dev/null
+        set -gx FZF_DEFAULT_COMMAND  'rg --files --no-ignore-vcs --hidden'
+      end
 
       # Use LibreSSL
       if test -d /usr/local/opt/libressl/bin
