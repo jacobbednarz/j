@@ -43,6 +43,16 @@
             sha256 = "0ppmajynpb9l58xbrcnbp41b66g7p0c9l2nlsvyjwk6d16g4p4gy";
           };
         }
+
+        {
+          name = "fenv";
+          src  = pkgs.fetchFromGitHub {
+            owner  = "oh-my-fish";
+            repo   = "plugin-foreign-env";
+            rev    = "dddd9213272a0ab848d474d0cbde12ad034e65bc";
+            sha256 = "00xqlyl3lffc5l0viin1nyp819wf81fncqyz87jx8ljjdhilmgbs";
+          };
+        }
       ];
 
     functions = {
