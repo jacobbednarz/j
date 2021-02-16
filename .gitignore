@@ -1,2 +1,5 @@
 # nix symlink to current binaries
 result
+
+# not so public forks/taps/formula
+config/homebrew/Brewfile.work
