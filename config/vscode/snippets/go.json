@@ -1,0 +1,9 @@
+{
+	"terraform debug state": {
+		"prefix": "tfdebug",
+		"body": [
+			"log.Printf(\"[DEBUG] jacob debug $1: %v\", $2)"
+		],
+		"description": "Insert a Terraform DEBUG log statement"
+	}
+}

@@ -1,8 +1,8 @@
 {
     "editor.fontFamily": "Jetbrains Mono",
-    "editor.fontSize": 13,
+    "editor.fontSize": 15,
     "editor.tabSize": 2,
-    "files.eol": "\r\n",
+    "files.eol": "\n",
     "explorer.confirmDelete": false,
     "editor.rulers": [
         80
@@ -12,5 +12,9 @@
     "files.trimTrailingWhitespace": true,
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
-    "workbench.colorTheme": "Gruvbox Dark Hard"
+    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.startupEditor": "newUntitledFile",
+    "go.useLanguageServer": true,
+    "go.formatTool": "gofumpt",
+    "hadolint.hadolintPath": "/usr/local/bin/hadolint"
 }
