@@ -23,5 +23,6 @@
     ./config/home-manager/direnv.nix
     ./config/home-manager/neovim.nix
     ./config/home-manager/asdf-vm.nix
+    ./config/home-manager/terraform.nix
   ];
 }
