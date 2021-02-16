@@ -33,6 +33,12 @@
       wip                    = "for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads";
     };
 
+    signing = {
+      key           = "9846E532AF49C75E";
+      signByDefault = true;
+      gpgPath       = "gpg";
+    };
+
     extraConfig = {
       core = {
         eol         = "lf";

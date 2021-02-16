@@ -77,6 +77,8 @@
             case 'all'
               _reload_shell
               _reload_direnv
+            case 'yubikey'
+              _reload_yubikey
             case 'direnv'
               _reload_direnv
             case '*'
@@ -85,11 +87,12 @@
         end
       '';
 
-      _reload_shell  = "source ~/.config/fish/config.fish; echo config reloaded";
-      _reload_direnv = "direnv allow; echo direnv reloaded";
-      init_direnv    = "echo 'use asdf' > .envrc; direnv reload; echo 'direnv has been initialised'";
-      direnv         = "asdf exec direnv $argv[1]";
-      jwt            = "ruby -rjson -rbase64 -e \"ARGV[0].split('.')[0,2].each_with_index { |f, i| j = JSON.parse(Base64.urlsafe_decode64(f)); jj j; break if i.zero? && j.key?('enc')}\" $argv[1]";
+      _reload_shell   = "source ~/.config/fish/config.fish; echo config reloaded";
+      _reload_direnv  = "direnv allow; echo direnv reloaded";
+      _reload_yubikey = "rm -r ~/.gnupg/private-keys-v1.d; gpgconf --kill gpg-agent; killall gpg-agent; gpg-agent --daemon";
+      init_direnv     = "echo 'use asdf' > .envrc; direnv reload; echo 'direnv has been initialised'";
+      direnv          = "asdf exec direnv $argv[1]";
+      jwt             = "ruby -rjson -rbase64 -e \"ARGV[0].split('.')[0,2].each_with_index { |f, i| j = JSON.parse(Base64.urlsafe_decode64(f)); jj j; break if i.zero? && j.key?('enc')}\" $argv[1]";
     };
 
     shellAliases = {
