@@ -36,9 +36,10 @@ brew "cloudflare/cloudflare/cloudflared"
 brew "coreutils"
 brew "ctags"
 brew "curl"
+brew "dnsmasq"
 brew "dnscrypt-proxy", restart_service: true
-brew "docker-compose", link: false
-brew "docker", link: false
+brew "docker-compose"
+brew "docker"
 brew "fd" # better `find`
 brew "findutils"
 brew "gdb"
@@ -46,7 +47,7 @@ brew "geckodriver"
 brew "gh"
 brew "gnu-sed"
 brew "gnu-tar"
-brew "gnupg", link: false
+brew "gnupg"
 brew "gperftools"
 brew "gpgme"
 brew "graphviz"
@@ -57,11 +58,13 @@ brew "hadolint"
 brew "hashcat"
 brew "heroku/brew/heroku"
 brew "hexyl"
+brew "hopenpgp-tools"
 brew "hping"
 brew "htop"
 brew "httperf"
 brew "httpie"
 brew "httpry"
+brew "hub"
 brew "iamy"
 brew "ipcalc"
 brew "jabley/wrk2/wrk2", args: ["HEAD"]
@@ -88,9 +91,11 @@ brew "plantuml"
 brew "procs"
 brew "psgrep"
 brew "pstree"
+brew "pinentry-mac"
 brew "pv"
 brew "pwgen"
 brew "python"
+brew "qrencode"
 brew "rbspy"
 brew "re2"
 brew "re2c"
@@ -115,6 +120,7 @@ brew "tmate"
 brew "tmux"
 brew "tmuxinator"
 brew "tree"
+brew "vault"
 brew "v2ray-plugin"
 brew "v8"
 brew "vim"
@@ -125,9 +131,11 @@ brew "whalebrew"
 brew "whois"
 brew "wrk"
 brew "yarn"
+brew "ykman"
 brew "youtube-dl"
 brew "yq"
 brew "yubikey-agent"
+brew "yubikey-personalization"
 cask "1password-cli"
 cask "1password"
 cask "altair-graphql-client"
@@ -185,6 +193,7 @@ cask "netiquette"
 cask "netspot"
 cask "ngrok"
 cask "nordvpn"
+cask "notion"
 cask "omnigraffle"
 cask "oversight"
 cask "owasp-zap"
@@ -205,6 +214,7 @@ cask "sketchup"
 cask "slack"
 cask "sloth"
 cask "spotify"
+cask "sublime-text"
 cask "sysdig-inspect"
 cask "tableplus"
 cask "taskexplorer"
@@ -226,20 +236,20 @@ cask "yubico-yubikey-manager"
 cask "zoomus"
 cask "font-jetbrains-mono"
 cask "font-source-code-pro"
-mas "Amphetamine", id: 937984704
-mas "Be Focused", id: 973134470
-mas "ColorSnapper", id: 418176775
-mas "GIF Brewery 3", id: 1081413713
-mas "iA Writer", id: 775737590
-mas "Meeter", id: 1510445899
-mas "MCG", id: 799178412
-mas "MindNode", id: 1289197285
-mas "Shush", id: 496437906
-mas "Tailscale", id: 1475387142
-mas "The Unarchiver", id: 425424353
-mas "Things", id: 904280696
-mas "WireGuard", id: 1451685025
+# mas "Amphetamine", id: 937984704
+# mas "Be Focused", id: 973134470
+# mas "ColorSnapper", id: 418176775
+# mas "GIF Brewery 3", id: 1081413713
+# mas "iA Writer", id: 775737590
+# mas "Meeter", id: 1510445899
+# mas "MCG", id: 799178412
+# mas "MindNode", id: 1289197285
+# mas "Shush", id: 496437906
+# mas "Tailscale", id: 1475387142
+# mas "The Unarchiver", id: 425424353
+# mas "Things", id: 904280696
+# mas "WireGuard", id: 1451685025
 # mas "Xcode", id: 497799835
-mas "Internet Access Policy Viewer", id: 1482630322
+# mas "Internet Access Policy Viewer", id: 1482630322
 
 instance_eval(File.read("/Users/jacob/.Brewfile.work"))
