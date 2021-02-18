@@ -1,0 +1,5 @@
+Include config.d/*
+
+Host *
+  AddKeysToAgent yes
+  ForwardAgent yes
