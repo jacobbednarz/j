@@ -3,3 +3,6 @@ result
 
 # not so public forks/taps/formula
 config/homebrew/Brewfile.work
+
+# private SSH configuration
+config/ssh/cloudflare
