@@ -1,20 +1,35 @@
 {
+    // Editor + UI
     "editor.fontFamily": "Jetbrains Mono",
     "editor.fontSize": 15,
-    "editor.tabSize": 2,
-    "files.eol": "\n",
-    "explorer.confirmDelete": false,
-    "editor.rulers": [
-        80
-    ],
-    "explorer.confirmDragAndDrop": false,
+    "editor.minimap.enabled": false,
+    "editor.rulers": [80],
     "editor.scrollBeyondLastLine": false,
-    "files.trimTrailingWhitespace": true,
+    "editor.tabSize": 2,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
+    "files.trimTrailingWhitespace": true,
     "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.enableExperiments": false,
     "workbench.startupEditor": "newUntitledFile",
+
+    // Git..or lack there of
+    "git.enabled": false,
+
+    // Misc
+    "extensions.ignoreRecommendations": true,
+    "keyboard.touchbar.enabled": false,
+    "update.showReleaseNotes": false,
+
+    // Go
     "go.useLanguageServer": true,
     "go.formatTool": "gofumpt",
+    "go.toolsManagement.autoUpdate": true,
+
+    // Hadolint
     "hadolint.hadolintPath": "/usr/local/bin/hadolint"
 }
