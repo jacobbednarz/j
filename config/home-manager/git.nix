@@ -37,6 +37,7 @@
       undo                   = "reset --soft HEAD^";
       unstage                = "reset HEAD --";
       wip                    = "for-each-ref --sort='authordate:iso8601' --format=' %(color:green)%(authordate:relative)%09%(color:white)%(refname:short)' refs/heads";
+      recent                 = "branch --sort=-committerdate --format=\"%(committerdate:relative)%09%(refname:short)\"";
     };
 
     signing = {
