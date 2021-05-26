@@ -43,7 +43,7 @@
     signing = {
       key           = "9846E532AF49C75E";
       signByDefault = true;
-      gpgPath       = "gpg";
+      gpgPath       = "/usr/local/bin/gpg";
     };
 
     includes = [
