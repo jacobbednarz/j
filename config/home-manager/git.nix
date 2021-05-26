@@ -46,6 +46,13 @@
       gpgPath       = "gpg";
     };
 
+    includes = [
+      {
+        condition = "gitdir:~/cf-repos/";
+        contents = { user.email = "jbednarz@cloudflare.com"; };
+      }
+    ];
+
     extraConfig = {
       core = {
         eol         = "lf";
