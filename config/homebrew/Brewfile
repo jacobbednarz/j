@@ -69,6 +69,7 @@ brew "iamy"
 brew "ipcalc"
 brew "jabley/wrk2/wrk2", args: ["HEAD"]
 brew "jacobbednarz/homebrew/avgtime"
+brew "jacobbednarz/homebrew/rdap" # no public formula yet so use a fork. can upstream once stable.
 brew "jemalloc"
 brew "jid"
 brew "jo"
