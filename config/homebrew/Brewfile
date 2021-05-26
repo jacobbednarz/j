@@ -232,7 +232,7 @@ cask "whatsyoursign"
 cask "wireshark"
 cask "yubico-authenticator"
 cask "yubico-yubikey-manager"
-cask "zoomus"
+cask "zoom"
 cask "font-jetbrains-mono"
 cask "font-source-code-pro"
 # mas "Amphetamine", id: 937984704
