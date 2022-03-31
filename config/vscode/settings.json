@@ -1,35 +1,81 @@
 {
+    // Only check for updates on startup
+    "update.mode": "start",
     // Editor + UI
+    "editor.formatOnSave": true,
     "editor.fontFamily": "Jetbrains Mono",
     "editor.fontSize": 15,
     "editor.minimap.enabled": false,
-    "editor.rulers": [80],
+    "editor.rulers": [
+        80
+    ],
     "editor.scrollBeyondLastLine": false,
-    "editor.tabSize": 2,
+    "editor.tabSize": 4,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.semanticHighlighting.enabled": true,
+    "editor.inlineSuggest.enabled": true,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimFinalNewlines": true,
     "files.trimTrailingWhitespace": true,
-    "workbench.colorTheme": "Gruvbox Dark Hard",
+    "workbench.colorTheme": "One Dark Pro Darker",
     "workbench.editor.untitled.hint": "hidden",
     "workbench.enableExperiments": false,
     "workbench.startupEditor": "newUntitledFile",
-
     // Git..or lack there of
     "git.enabled": false,
-
     // Misc
     "extensions.ignoreRecommendations": true,
     "keyboard.touchbar.enabled": false,
     "update.showReleaseNotes": false,
-
+    // PHP
+    "[php]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client",
+    },
+    //Typescript
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     // Go
     "go.useLanguageServer": true,
-    "go.formatTool": "gofumpt",
+    "go.formatTool": "gofmt",
+    "go.formatFlags": [
+        "-w",
+        "-s"
+    ],
     "go.toolsManagement.autoUpdate": true,
-
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": [
+        "--fast",
+        "--config .golintci.yml"
+    ],
     // Hadolint
-    "hadolint.hadolintPath": "/usr/local/bin/hadolint"
+    "hadolint.hadolintPath": "/usr/local/bin/hadolint",
+    // YAML
+    "[yaml]": {
+        "editor.formatOnSave": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "keep",
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": true
+        }
+    },
+    // Terraform
+    "terraform.languageServer": {
+        "external": true,
+        "pathToBinary": "",
+        "args": [
+            "serve"
+        ],
+        "maxNumberOfProblems": 100,
+        "trace.server": "off"
+    },
+    // nix
+    "nix.enableLanguageServer": true
 }
