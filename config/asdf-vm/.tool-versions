@@ -1,2 +1,5 @@
-golang 1.15.6
-terraform 0.13.6
+golang 1.17.6
+terraform 1.0.7
+ruby 2.6.4
+nodejs 16.14.0
+php 7.4.16
