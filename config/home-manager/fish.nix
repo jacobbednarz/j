@@ -10,6 +10,11 @@
       # turn off the damn greeting
       set fish_greeting
 
+      # shadowenv for loading and unloading environment config
+      if command -v shadowenv &> /dev/null
+        shadowenv init fish | source
+      end
+
       # autojump
       [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
 
