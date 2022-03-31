@@ -6,7 +6,7 @@
 
   home.username = "jacob";
   home.homeDirectory = "/Users/jacob";
-  home.stateVersion = "20.03";
+  home.stateVersion = "21.05";
 
   # home.nix is basically the entrypoint for all other topic files that live
   # under the home-manager directory.
@@ -27,4 +27,7 @@
     ./config/home-manager/asdf-vm.nix
     ./config/home-manager/terraform.nix
   ];
+
+  # no need to tell me there is news, i'll check on my own
+  news.display = "silent";
 }
