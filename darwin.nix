@@ -52,4 +52,8 @@
 
   # login
   system.defaults.loginwindow.GuestEnabled = false;
+
+  system.autoUpgrade.enable = true;
+  system.autoUpgrade.allowReboot = true;
+  system.autoUpgrade.channel = https://nixos.org/channels/nixos-21.05;
 }
