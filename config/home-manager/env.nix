@@ -7,6 +7,7 @@
     NIX_SSL_CERT_FILE = "/nix/var/nix/profiles/per-user/jacob/profile/etc/ssl/certs/ca-bundle.crt";
 
     PATH = lib.strings.concatStringsSep ":" [
+      "/Users/jacob/.asdf/shims"
       "/Users/jacob/.nix-profile/bin"
       "/run/current-system/sw/bin"
       "/Users/jacob/.asdf/shims"

@@ -33,6 +33,9 @@
         set -g fish_user_paths "/usr/local/opt/libressl/bin" $fish_user_paths
       end
 
+      # source asdf-vm
+      source /usr/local/opt/asdf/libexec/asdf.fish
+
       set -gx GPG_TTY (tty)
       set -gx SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
       gpgconf --launch gpg-agent
