@@ -1,5 +1,5 @@
 golang 1.17.6
-terraform 1.0.7
-ruby 2.6.4
+terraform 1.1.9
+ruby 2.7.6
 nodejs 16.14.0
-php 7.4.16
+php 7.4.29
