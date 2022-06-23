@@ -63,6 +63,7 @@
         commentChar = "|";
         pager       = "~/.nix-profile/share/git/contrib/diff-highlight/diff-highlight | less";
         commitGraph = true;
+        excludesFile = "~/.gitignore";
       };
 
       status.renames = "copies";
@@ -138,4 +139,7 @@
       advice.detachedHead = false;
     };
   };
+
+  # global gitignore file
+  home.file.".gitignore".source = ../git/gitignore;
 }
