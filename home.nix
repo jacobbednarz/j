@@ -15,6 +15,7 @@
     ./config/home-manager/env.nix
     ./config/home-manager/bin.nix
     ./config/home-manager/ssh.nix
+    ./config/home-manager/tmux.nix
     ./config/home-manager/fish.nix
     ./config/home-manager/git.nix
     ./config/home-manager/gnupg.nix
