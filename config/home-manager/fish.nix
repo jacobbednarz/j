@@ -10,13 +10,13 @@
       # turn off the damn greeting
       set fish_greeting
 
-      # shadowenv for loading and unloading environment config
-      if command -v shadowenv &> /dev/null
-        shadowenv init fish | source
+      # direnv for loading and unloading environment config
+      if command -v direnv &> /dev/null
+        direnv hook fish | source
       end
 
       # autojump
-      [ -f /usr/local/share/autojump/autojump.fish ]; and source /usr/local/share/autojump/autojump.fish
+      [ -f ${pkgs.autojump}/share/autojump/autojump.fish ]; and source ${pkgs.autojump}/share/autojump/autojump.fish
 
       # hub
       if command -v hub &> /dev/null
@@ -34,7 +34,7 @@
       end
 
       # source asdf-vm
-      source /usr/local/opt/asdf/libexec/asdf.fish
+      [ -f ${pkgs.asdf-vm}/share/asdf-vm/asdf.fish ]; and source ${pkgs.asdf-vm}/share/asdf-vm/asdf.fish
 
       set -gx GPG_TTY (tty)
       set -gx SSH_AUTH_SOCK (gpgconf --list-dirs agent-ssh-socket)
@@ -113,7 +113,6 @@
       _reload_direnv  = "direnv allow; echo direnv reloaded";
       _reload_yubikey = "rm -r ~/.gnupg/private-keys-v1.d; gpgconf --kill gpg-agent; killall gpg-agent; gpg-agent --daemon";
       init_direnv     = "echo 'use asdf' > .envrc; direnv reload; echo 'direnv has been initialised'";
-      direnv          = "asdf exec direnv $argv[1]";
       jwt             = "ruby -rjson -rbase64 -e \"ARGV[0].split('.')[0,2].each_with_index { |f, i| j = JSON.parse(Base64.urlsafe_decode64(f)); jj j; break if i.zero? && j.key?('enc')}\" $argv[1]";
     };
 
