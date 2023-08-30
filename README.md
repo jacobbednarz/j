@@ -11,6 +11,7 @@ dotfiles; delivered via nix, nix-darwin and home-manager
 - `./result/bin/darwin-installer`
 - `nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager`
 - `nix-channel --update`
+- `nix-shell '<home-manager>' -A install` (install home-manager in standalone mode)
 - `ln -sf /Users/jacob/src/j /Users/jacob/.config/home-manager`
 - `/Users/jacob/.config/nixpkgs/install`
 
