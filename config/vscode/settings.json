@@ -49,8 +49,7 @@
     "go.toolsManagement.autoUpdate": true,
     "go.lintTool": "golangci-lint",
     "go.lintFlags": [
-        "--fast",
-        "--config .golintci.yml"
+        "--fast"
     ],
     // Hadolint
     "hadolint.hadolintPath": "/usr/local/bin/hadolint",
