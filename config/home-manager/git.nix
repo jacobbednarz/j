@@ -43,7 +43,7 @@
     signing = {
       key           = "9846E532AF49C75E";
       signByDefault = true;
-      gpgPath       = "/usr/local/bin/gpg";
+      gpgPath       = "/Users/jacob/.nix-profile/bin/gpg";
     };
 
     includes = [
@@ -117,6 +117,8 @@
 
       "difftool \"Kaleidoscope\"" = {
         cmd = "ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"";
+        prompt = false;
+        trustExitCode = true;
       };
 
       pager = {
