@@ -1,13 +1,18 @@
 { config, pkgs, ... }:
 
 {
-  environment.darwinConfig = "$HOME/.config/nixpkgs/darwin.nix";
+  #environment.darwinConfig = "$HOME/.config/home-manager/darwin.nix";
+  environment.darwinConfig = "$HOME/.nixpkgs/darwin-configuration.nix";
 
   users.users.jacob = {
     home = "/Users/jacob";
     description = "Jacob Bednarz";
     shell = pkgs.fish;
   };
+
+  security.pki.certificateFiles = [
+    "/Users/jacob/.local/share/warp/cloudflare.crt"
+  ];
 
   # auto-correct
   system.defaults.NSGlobalDomain.NSAutomaticCapitalizationEnabled = false;
@@ -53,7 +58,12 @@
   # login
   system.defaults.loginwindow.GuestEnabled = false;
 
-  system.autoUpgrade.enable = true;
-  system.autoUpgrade.allowReboot = true;
-  system.autoUpgrade.channel = https://nixos.org/channels/nixos-21.05;
+  #system.autoUpgrade.enable = true;
+  #system.autoUpgrade.allowReboot = true;
+  #system.autoUpgrade.channel = https://nixos.org/channels/nixos-21.05;
+
+  system.stateVersion = 4;
+
+#   nix.settings.trusted-users = ["*"];
+  services.nix-daemon.enable = true;
 }
