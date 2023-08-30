@@ -4,9 +4,14 @@ dotfiles; delivered via nix, nix-darwin and home-manager
 
 ## Install
 
+
 - `git clone https://github.com/jacobbednarz/j/ ~/src/j`
-- `sh <(curl -L https://nixos.org/nix/install) --darwin-use-unencrypted-nix-store-volume`
-- `ln -sf /Users/jacob/src/j/ /Users/jacob/.config/nixpkgs`
+- `curl -L https://nixos.org/nix/install | sh`
+- `nix-build https://github.com/LnL7/nix-darwin/archive/master.tar.gz -A installer
+./result/bin/darwin-installer`
+- `nix-channel --add https://github.com/nix-community/home-manager/archive/master.tar.gz home-manager`
+- `nix-channel --update`
+- `ln -sf /Users/jacob/src/j /Users/jacob/.config/home-manager`
 - `/Users/jacob/.config/nixpkgs/install`
 
 ## Overview
