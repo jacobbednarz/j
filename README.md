@@ -13,6 +13,8 @@ dotfiles; delivered via nix, nix-darwin and home-manager
 - `nix-channel --update`
 - `nix-shell '<home-manager>' -A install` (install home-manager in standalone mode)
 - `ln -sf /Users/jacob/src/j /Users/jacob/.config/home-manager`
+- `echo "/Users/jacob/.nix-profile/fish" >> /etc/shells`
+- `chsh -s /Users/jacob/.nix-profile/fish`
 - `/Users/jacob/.config/nixpkgs/install`
 
 ## Overview
